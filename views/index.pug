@@ -1,0 +1,25 @@
+extends layouts/_layout
+block content
+  .page1.page4_theme.js-page1
+    +_header()
+    .page4__wrapper.page4__wrapper_bg
+      .knowledge
+        .knowledge__center
+          .knowledge__question فایل مورد نظر خود را جستجو کنید
+          .knowledge__filters
+            select.knowledge__select
+              option همه دسته‌ها
+              option ویژه
+              option رایگان
+            input.knowledge__input.ss02(type="text" placeholder="جستجو در میان 10000 فایل صوتی...")
+            button.knowledge__open
+              +i('search')
+          .knowledge__indicators
+            .knowledge__text پیشنهادها:
+            .knowledge__tags
+              a.knowledge__tag(href="/") Beat
+              a.knowledge__tag(href="/") Audio
+              a.knowledge__tag(href="/") Fast Beat
+              a.knowledge__tag(href="/") Music
+              a.knowledge__tag(href="/") Free
+      +switchTheme('switch_theme', 'js-switch-theme')
